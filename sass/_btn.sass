@@ -1,0 +1,72 @@
+/* Навигация слайдера */
+.swiper-button-prev
+    width: 36px
+    height: 36px
+    position: absolute
+    left: 10px
+    top: 120px
+    z-index: 2
+
+    border: none
+    background: #fff
+    border-radius: 100px
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 0.3)
+    &::before
+        content: ''
+        display: block
+        width: 12px
+        height: 12px
+        background: url(../img/icons/arrow-left.svg) center center / contain no-repeat
+        position: absolute
+        left: 46%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+.swiper-button-next
+    width: 36px
+    height: 36px
+    position: absolute
+    right: 10px
+    top: 120px
+    z-index: 2
+
+    border: none
+    background: #fff
+    border-radius: 100px
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 0.3)
+    &::before
+        content: ''
+        display: block
+        width: 12px
+        height: 12px
+        background: url(../img/icons/arrow-right.svg) center center / contain no-repeat
+        position: absolute
+        left: 54%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+/* Показать все */
+.hidden-btn
+    color: #000
+    font-size: 16px
+    font-weight: 600
+    line-height: 24px
+
+    background: none
+    border: none
+
+    display: flex
+    align-items: center
+    &::before
+        content: ''
+        display: block
+        width: 24px
+        height: 24px
+        background: url(../img/icons/arrow-btn.svg) center center/ cover no-repeat
+
+        margin-right: 16px
+
+        transition: .5s
+    &.active
+        &::before
+            transform: rotate(180deg)

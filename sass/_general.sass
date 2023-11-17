@@ -1,0 +1,137 @@
+*
+    box-sizing: border-box
+    font-family: Golos,sans-serif
+
+a
+    text-decoration: none
+
+img
+    display: block
+    max-width: 100%
+    height: auto
+
+.container
+    max-width: 1150px
+    padding: 0 15px
+    margin: 0 auto
+
+/* Первая секция */
+.main-section
+    .container
+        position: relative
+        margin-top: 40px
+        margin-bottom: 46px
+
+.swiper
+    max-width: 500px
+    height: auto
+    background: url(../img/bg-img.svg) top center / 260px no-repeat
+
+.swiper-slide
+    margin-top: 42px
+    text-align: center
+
+    opacity: 0.1
+    transition: opacity .3s ease-in-out
+    &__img
+        margin-bottom: 56px
+
+        transition: 1s ease-in-out
+        img
+            width: 170px
+            margin: 0 auto
+    &__title
+        color: #000
+
+        font-size: 20px
+        font-weight: 700
+        line-height: 24px
+
+        margin-bottom: 12px
+
+    &__text
+        color: #000
+
+        font-size: 14px
+        font-weight: 500
+        line-height: 24px
+
+.swiper-container
+    .swiper-slide:first-child
+        opacity: 1
+
+.swiper-slide-active
+    .swiper-slide__img
+        margin-bottom: 36px
+
+/* Вторая секция */
+.second-section
+    .container
+        .hidden-btn
+            margin: 32px auto
+
+.stickers
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+
+    overflow: hidden
+    transition: 1s
+    max-height: 376px
+
+    &.expanded
+        max-height: 1000px
+    &__row
+        display: flex
+        justify-content: center
+        width: 100%
+    &__link-wrapper
+        margin-bottom: 8px
+        margin-right: 8px
+
+        width: 104px
+        height: 118px
+    a
+        width: 100%
+        height: 100%
+        border-radius: 16px
+
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+        &:last-child
+            margin-right: 0
+        img
+            width: 64px
+            height: 64px
+            margin-bottom: 6px
+        p
+            margin: 0
+            color: #000
+            font-size: 12px
+            font-weight: 500
+            line-height: 18px
+
+    &__sl1
+        background: #FFEDCC
+    &__sl2
+        background: #FFE1E1
+    &__sl3
+        background: #D9E8FB
+    &__sl4
+        background: #E7ECF3
+    &__sl5
+        background: #F2D7FF
+    &__sl6
+        background: #C3FFC9
+    &__sl7
+        background: #FFE1F0
+    &__sl8
+        background: #FFE1E1
+    &__sl9
+        background: #FFE1E1
+    &__sl10
+        background: #C3FFF4
